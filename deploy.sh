@@ -1,12 +1,15 @@
 #!/bin/bash
 echo "Iniciando todos os serviços do servidor..."
 
+# Descobre o caminho exato onde o script está rodando
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+
 # Inicia o Plex
 echo "-> Subindo Plex..."
-cd servicos/plex && docker compose up -d && cd ../..
+cd "$DIR/services/plex" && docker compose up -d
 
 # Inicia o Vaultwarden
 echo "-> Subindo Vaultwarden..."
-cd servicos/vaultwarden && docker compose up -d && cd ../..
+cd "$DIR/services/vaultwarden" && docker compose up -d
 
-echo "Todos os serviços foram iniciados com sucesso!"
+echo "Processo de deploy finalizado!"
