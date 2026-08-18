@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  minecraft:
+    image: itzg/minecraft-server
+    container-name: minecraft
+    restart: unless-stopped
+    ports:
+      - 25565:25565
+    environment:
+      - EULA=TRUE
+      - TYPE=PAPER
+      - VERSION=LATEST
+      - MEMORY=6,G
+      - TZ=America/Sao_Paulo
+      - PUID=1000
+      - PGID=1000
+    volumes:
+      - ./data:/data
+    

@@ -12,4 +12,7 @@ cd "$DIR/services/plex" && docker compose up -d
 echo "-> Subindo Vaultwarden..."
 cd "$DIR/services/vaultwarden" && docker compose up -d
 
+echo "-> Subindo Minecraft..."
+cd "$DIR/services/minecraft" && docker compose up -d
+
 echo "Processo de deploy finalizado!"
