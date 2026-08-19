@@ -12,4 +12,7 @@ cd "$DIR/services/vaultwarden" && docker compose down
 echo "-> Parando Minecraft..."
 cd "$DIR/services/minecraft" && docker compose down
 
+echo "-> Parando API servidor... "
+cd "$DIR/services/api" && docker compose down
+
 echo "Todos os serviços foram desligados com sucesso!"

@@ -1,0 +1,9 @@
+services:
+  web:
+    build: .
+    container_name: monitor_api
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    pid: "host"
+    
