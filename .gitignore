@@ -1,3 +1,5 @@
 config/
 transcode/
 vw-data/
+services/minecraft/data/
+*.jar
