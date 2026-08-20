@@ -1,0 +1,9 @@
+services:
+  website:
+    image: nginx:alpine
+    container_name: site-minecraft
+    restart: unless-stopped
+    ports:
+      - 80:80
+    volumes:
+      - ./index.html:/usr/share/nginx/html/index.html:ro

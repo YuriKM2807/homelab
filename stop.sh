@@ -9,6 +9,9 @@ cd "$DIR/services/plex" && docker compose down
 echo "-> Parando Vaultwarden..."
 cd "$DIR/services/vaultwarden" && docker compose down
 
+echo "-> Parando Site Minecraft"
+cd "$DIR/services/site" && docker compose down
+
 echo "-> Parando Minecraft..."
 cd "$DIR/services/minecraft" && docker compose down
 

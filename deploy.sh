@@ -15,7 +15,11 @@ cd "$DIR/services/vaultwarden" && docker compose up -d
 echo "-> Subindo Minecraft..."
 cd "$DIR/services/minecraft" && docker compose up -d
 
+echo "-> Subindo site de Minecraft..."
+cd "$DIR/services/site" && docker compose up -d
+
 echo "-> Subindo API de Servidor... "
 cd "$DIR/services/api_server" && docker compose up -d --build
+
 
 echo "Processo de deploy finalizado!"
