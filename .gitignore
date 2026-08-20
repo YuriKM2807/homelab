@@ -3,3 +3,7 @@ transcode/
 vw-data/
 services/minecraft/data/
 *.jar
+# Python / API
+.venv/
+__pycache__/
+*.pyc
