@@ -16,6 +16,6 @@ echo "-> Subindo Minecraft..."
 cd "$DIR/services/minecraft" && docker compose up -d
 
 echo "-> Subindo API de Servidor... "
-cd "$DIR/services/api" && docker compose up -d --build
+cd "$DIR/services/api_server" && docker compose up -d --build
 
 echo "Processo de deploy finalizado!"

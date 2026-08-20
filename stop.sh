@@ -13,6 +13,6 @@ echo "-> Parando Minecraft..."
 cd "$DIR/services/minecraft" && docker compose down
 
 echo "-> Parando API servidor... "
-cd "$DIR/services/api" && docker compose down
+cd "$DIR/services/api_server" && docker compose down
 
 echo "Todos os serviços foram desligados com sucesso!"
