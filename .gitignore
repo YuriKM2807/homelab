@@ -7,3 +7,4 @@ services/minecraft/data/
 .venv/
 __pycache__/
 *.pyc
+services/proxy/letsencrypt/

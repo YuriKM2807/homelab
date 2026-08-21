@@ -4,6 +4,6 @@ services:
     container_name: site-minecraft
     restart: unless-stopped
     ports:
-      - 80:80
+      - 8001:80
     volumes:
       - ./:/usr/share/nginx/html
